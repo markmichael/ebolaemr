@@ -197,10 +197,10 @@
 	display:inline-block;
 	float:left;
 }
-.daycontainer {
+.day {
 	height: 30px;
 	width:100%;
-	background-color:#c8f7c5;
+	background-color:#ecf0f1;
 	padding-top:6px;
 	padding-left:10px;
 }
@@ -237,10 +237,28 @@
 }
 
 .paininjury {
-	background-color:#e74c3c;
+	background-color:#e74c3c !important;
 	opacity:.5;
 }
 
 .warning {
 	background-color: #f1a9a0;
+}
+
+#addday:hover {
+	background-color:#7f8c8d;
+	color:#ecf0f1;
+}
+
+.activatedday{
+	background-color:#c8f7c5;
+}
+
+.time:hover {
+	border-left:solid 1px #6c7a89;
+	border-right:solid 1px #6c7a89;
+}
+
+#addtime:hover {
+	background-color:#ecf0f1;
 }

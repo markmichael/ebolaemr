@@ -10,6 +10,21 @@ $(document).ready(function(){
 		$(this).toggleClass("paininjury");
 	});
 
+	var latestday=$('.daycontainer').size();
+	$(".daycontainer>div:last-child").addClass("activatedday");
+
+	$("#addday").click(function(){
+		addday(latestday);
+		latestday++;
+		$(".daycontainer").children().removeClass("activatedday");
+		$(".daycontainer>div:last-child").addClass("activatedday");
+	})
+
+	$(document).on('click','.day', function(){
+		$(".daycontainer").children().removeClass("activatedday");
+		$(this).addClass("activatedday");
+	});
+
 	});
 var checkeverything=function(){
 
@@ -55,4 +70,12 @@ var checkeverything=function(){
 	else {
 		$("#overall").removeClass("warning");
 	}
+}
+
+var addday=function(latestday){
+	$(".daycontainer").append("<div class='day'>Day "+(latestday)+"<div class='time' class='addtime'>+</div><div class='time'>1</div></div");
+}
+
+var addtime=function(latesttime){
+	$(this).clone().removeClass("addtime").text(latesttime);
 }
