@@ -64,7 +64,7 @@
 }
 
 #formwrapper {
-	width:55%;
+	width:60%;
 	clear:both;
 	float:left;
 	margin-left:1%;
@@ -80,7 +80,7 @@
 }
 
 #leftcolumn {
-	width:55%;
+	width:50%;
 	height:100%;
 	float:left;
 	clear:both;
@@ -172,7 +172,7 @@
 }
 #rightcolumn{
 	display:inline-block;
-	width:40%;
+	width:45%;
 	height:100%;
 }
 #mancontainer{
@@ -199,7 +199,7 @@
 	display:inline-block;
 }
 #rightwrapper{
-	width:43%;
+	width:37%;
 	display:inline-block;
 	float:left;
 }
