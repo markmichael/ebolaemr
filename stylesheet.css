@@ -62,6 +62,8 @@
 	clear:both;
 	float:left;
 	margin-left:1%;
+	background-color:#c8f7c5;
+	border:solid 1px #6c7a89;
 }
 
 #IDinput {
@@ -77,7 +79,7 @@
 	float:left;
 	clear:both;
 	display:inline-block;
-	border:solid 1px #6c7a89;
+	border-right:solid 1px #6c7a89;
 	padding:4px;
 	margin-top:3px;
 }
@@ -86,7 +88,8 @@
 	display:inline-block;
 	clear:both;
 	width:100%;
-	margin-top:2%;
+	padding-top:2%;
+	padding-bottom:2%;
 	border-bottom:solid 1px #6c7a89;
 }
 
@@ -111,7 +114,7 @@
 }
 
 #vitalsrightcolumn{
-	float-left
+	float:left;
 	width:48%;
 	height:100%;
 	display:inline-block;
@@ -132,6 +135,13 @@
 	width:20%;
 	display:inline-block;
 }
+#bleedingcontainer{
+	padding-top:4px;
+	padding-left:4px;
+	border-bottom:solid 1px #6c7a89;
+	height:60px;
+	margin-top:3px;
+}
 .bleeding {
 	display:block;
 }
@@ -141,6 +151,18 @@
 	display:inline-block;
 	width:80px;
 	text-align: center;
+	margin-top:7px;
+}
+.medscontainer {
+	padding-left:4px;
+	border-bottom:solid 1px #6c7a89;
+	padding-bottom:10px;
+}
+.fluidmanagement {
+	padding-left:4px;
+	padding-top:4px;
+	padding-bottom:4px;
+	border-bottom:solid 1px #6c7a89;
 }
 #rightcolumn{
 	display:inline-block;
@@ -153,6 +175,11 @@
 	width:245px;
 	background-repeat:no-repeat;
 }
+
+.gridrow{
+	height:20.4px;
+	width:245px;
+}
 .leftmancolumn {
 	height:20.4px;
 	width:20px;
@@ -164,4 +191,56 @@
 	width:20px;
 	float:right;
 	display:inline-block;
+}
+#rightwrapper{
+	width:43%;
+	display:inline-block;
+	float:left;
+}
+.daycontainer {
+	height: 30px;
+	width:100%;
+	background-color:#c8f7c5;
+	padding-top:6px;
+	padding-left:10px;
+}
+.time {
+	float:right;
+	width:30px;
+	text-align:center;
+	height:100%;
+}
+#addday {
+	height:15px;
+	width:50px;
+	margin:0 auto;
+	background-color:#6c7189;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius: 15px;
+	text-align:center;
+	font-weight:900;
+	padding-bottom:4px;
+}
+
+
+.notselected:hover, .bleedingchoices:hover{
+	background-color:#bdc3c7;
+}
+
+.leftmancolumn:hover, .rightmancolumn:hover {
+	background-color:#f1a9a0;
+	opacity:.4;
+}
+
+.activated{
+	border:solid 1px #cf000f;
+}
+
+.paininjury {
+	background-color:#e74c3c;
+	opacity:.5;
+}
+
+.warning {
+	background-color: #f1a9a0;
 }
