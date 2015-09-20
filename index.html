@@ -14,19 +14,62 @@
 				<div id="patientID">
 					Patient ID:
 				</div>
-				<div id="patientIDplaceholder">
+				<div class="patientIDplaceholder">
 				</div>
 				<div id="changepatient">
 					<img src="images/arrowdown.png" />
+				</div>				
+				<div class="changeebolastatus">
+					<img src="images/arrowdown.png" />
 				</div>
 				<div id="ebolastatus">
+					Ebola Status:
 				</div>
 			</div>
 			<div id="formwrapper">
-				<div id="leftcolumn">
-				</div>
-				<div id="rightcolumn">
-				</div>
+				<form>
+					<div id="leftcolumn">
+						<div id="IDinput">
+							Patient ID: <input type="text" name="PtID">
+						</div>
+						<div id="consciousnessinput">
+							Consciousness:
+							<div class="notselected">
+								A
+							</div>
+							<div class="notselected">
+								V
+							</div>
+							<div class="notselected">
+								P
+							</div>
+							<div class="notselected">
+								U
+							</div>
+						</div>
+
+						<div id="vitals">
+							<div id="vitalsleftcolumn">
+								<div class="leftcolumnvital" id="tempinput">
+									Temp: <input type="number" size="4" class="vitalinput" step=".1"> &degC
+								</div>
+								<div class="leftcolumnvital" id="RRinput">
+									RR: <input type="number" size="2" class="vitalinput"> bpm
+								</div>
+								<div class="leftcolumnvital" id="BPinput">
+									BP: <input type="number" size="2" style="width: 40px"> / <input type="number" size="2" style="width: 40px"> mmHg
+								</div>
+								<div class="leftcolumnvital" id="JVPinput">
+								</div>
+							</div>
+							<div id="vitalsrightcolumn">
+							</div>
+						</div>
+
+					</div>
+					<div id="rightcolumn">
+					</div>
+				</form>
 			</div>
 			<div id="rightwrapper">
 			</div>
