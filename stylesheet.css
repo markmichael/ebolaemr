@@ -1,0 +1,38 @@
+#bigwrapper {
+	background-color:#f2f1ef;
+	height:97vh;
+	width:98vw;
+	margin:auto;
+}
+
+#header {
+	top:0;
+	background-color:#f5d76e;
+	height:5%;
+}
+
+#changepatient {
+	height:100%;
+	display:inline-block;
+	float:left;
+}
+
+#changepatient img {
+	width:100%;
+	height:auto;
+
+}
+#patientID {
+	float:left;
+	font-size:18pt;
+	display:inline-block;
+	width:10%;
+}
+
+#patientIDplaceholder {
+	height:100%;
+	width:12%;
+	display:inline-block;
+	float:left;
+}
+
