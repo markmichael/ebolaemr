@@ -32,8 +32,10 @@
 						<div id="IDinput">
 							Patient ID: <input type="text" name="PtID">
 						</div>
-						<div id="consciousnessinput">
-							Consciousness:
+						<div class="fullleftcolumn" id="consciousnessinput">
+							<div class="category">
+								Consciousness:
+							</div>
 							<div class="notselected">
 								A
 							</div>
@@ -50,24 +52,489 @@
 
 						<div id="vitals">
 							<div id="vitalsleftcolumn">
-								<div class="leftcolumnvital" id="tempinput">
-									Temp: <input type="number" size="4" class="vitalinput" step=".1"> &degC
+								<div class="columnvital" id="tempinput">
+									Temp: &nbsp&nbsp<input type="number" size="4" class="vitalinput" step=".1"> &degC
 								</div>
-								<div class="leftcolumnvital" id="RRinput">
-									RR: <input type="number" size="2" class="vitalinput"> bpm
+								<div class="columnvital" id="RRinput">
+									RR: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" size="2" class="vitalinput"> bpm
 								</div>
-								<div class="leftcolumnvital" id="BPinput">
-									BP: <input type="number" size="2" style="width: 40px"> / <input type="number" size="2" style="width: 40px"> mmHg
+								<div class="columnvital" id="sysinput">
+									Sys BP: <input type="number" size="2" class="vitalinput"> mmHg
 								</div>
-								<div class="leftcolumnvital" id="JVPinput">
+								<div class="columnvital" id="JVPinput">
+								JVD: &nbsp&nbsp&nbsp&nbsp<input type="checkbox">
 								</div>
 							</div>
 							<div id="vitalsrightcolumn">
+								<div class="columnvital" id="oxinput">
+									O2 Sat: <input type="number" size="2" class="vitalinput"> %
+								</div>
+								<div class="columnvital" id="HRinput">
+									HR: &nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" size="3" class="vitalinput"> bpm
+								</div>
+								<div class="columnvital" id="diainput">
+									Dia BP <input type="number" size="3" class="vitalinput"> mmHg
+								</div>
+								<div class="columnvital" id="capinput">
+									<form>
+										Cap refill<input name="cap" type="radio" value=">2 sec."> &gt 2s   <input  name= "cap" type="radio" value="<2 sec." checked> &lt 2s
+								</div>
 							</div>
 						</div>
-
+						<div class="fullleftcolumn" id="abdomen" >
+							Abdomen tender: <input type="checkbox">
+						</div>
+						<div class="fullleftcolumn" id="dehydration">
+							<div class="category">
+								Dehydration: 
+							</div>
+							<div class="notselected">
+								None
+							</div>
+							<div class="notselected">
+								Mild
+							</div>
+							<div class="notselected">
+								Mod
+							</div>
+							<div class="notselected">
+								Sev
+							</div>
+						</div>
+						<div class="fullleftcolumn" id="vomiting">
+							<div class="category">
+								Vomiting: 
+							</div>
+							<div class="notselected">
+								None
+							</div>
+							<div class="notselected">
+								Mild
+							</div>
+							<div class="notselected">
+								Mod
+							</div>
+							<div class="notselected">
+								Sev
+							</div>
+						</div>
+							<div class="fullleftcolumn" id="anemia">
+							<div class="category">
+								Anemia: 
+							</div>
+							<div class="notselected">
+								None
+							</div>
+							<div class="notselected">
+								Mild
+							</div>
+							<div class="notselected">
+								Mod
+							</div>
+							<div class="notselected">
+								Sev
+							</div>
+						</div>
+						<div class="fullleftcolumn" id="stool">
+							<div class="category">
+								Stool: 
+							</div>
+							<div class="notselected">
+								F
+							</div>
+							<div class="notselected">
+								S
+							</div>
+							<div class="notselected">
+								L
+							</div>
+							<div class="notselected">
+								N
+							</div>
+						</div>
+						<div class="fullleftcolumn" id="overall">
+							<div class="category">
+								Overall: 
+							</div>
+							<div class="notselected">
+								+
+							</div>
+							<div class="notselected">
+								-
+							</div>
+							<div class="notselected">
+								=
+							</div>
+						</div>	
+						<div class="fullleftcolumn" id="overall">
+							<div class="category">
+								Headache: 
+							</div>
+							<div class="notselected">
+								Y
+							</div>
+							<div class="notselected">
+								N
+							</div>
+							<div class="notselected">
+								U
+							</div>
+						</div>	
+						<div class="fullleftcolumn" id="overall">
+							<div class="category">
+								Muscle Pain: 
+							</div>
+							<div class="notselected">
+								Y
+							</div>
+							<div class="notselected">
+								N
+							</div>
+							<div class="notselected">
+								U
+							</div>
+						</div>	
+						<div class="fullleftcolumn" id="overall">
+							<div class="category">
+								Cough: 
+							</div>
+							<div class="notselected">
+								Y
+							</div>
+							<div class="notselected">
+								N
+							</div>
+							<div class="notselected">
+								U
+							</div>
+						</div>	
+						<div class="fullleftcolumn" id="overall">
+							<div class="category">
+								Can Drink: 
+							</div>
+							<div class="notselected">
+								Y
+							</div>
+							<div class="notselected">
+								N
+							</div>
+							<div class="notselected">
+								U
+							</div>
+						</div>	
+						<div class="fullleftcolumn" id="overall">
+							<div class="category">
+								Can Eat: 
+							</div>
+							<div class="notselected">
+								Y
+							</div>
+							<div class="notselected">
+								N
+							</div>
+							<div class="notselected">
+								U
+							</div>
+						</div>	
+						<div class="fullleftcolumn" id="overall">
+							<div class="category">
+								Rash: 
+							</div>
+							<div class="notselected">
+								Y
+							</div>
+							<div class="notselected">
+								N
+							</div>
+							<div class="notselected">
+								U
+							</div>
+						</div>
 					</div>
 					<div id="rightcolumn">
+						<div id="bleedingcontainer">
+							<div class="bleeding">
+								Bleeding:
+							</div>	
+							<div class="bleedingchoices" id="cough">
+							Cough
+							</div>
+							<div class="bleedingchoices" id="nose">
+							Nose
+							</div>
+							<br>
+							<div class="bleedingchoices" id="stool">
+							Stool
+							</div>
+							<div class="bleedingchoices" id="vomit">
+							Vomit
+							</div>
+						</div>
+						<br>
+						<div class="medscontainer">
+							<input type="checkbox"> AL (ACT)
+							<br>
+							<input type="checkbox"> Artesunate
+							<br>
+							<input type="checkbox"> Quinine
+							<br>
+							<input type="checkbox"> Ceftriaxone
+							<br>
+							<input type="checkbox"> Cefixime
+							<br>
+							<input type="checkbox"> Metronidazole
+							<br>
+							<input type="checkbox"> Paracetamol
+							<br>
+							<input type="checkbox"> Tramadol
+							<br>
+							<input type="checkbox"> Morphine
+						</div>
+						<div class="fluidmanagement">
+							<div class="category" style="width: 25%">
+								Fluid Management: 
+							</div>
+							<div class="notselected" style="margin-left:30px">
+								1
+							</div>
+							<div class="notselected">
+								2
+							</div>
+							<div class="notselected">
+								3
+							</div>
+							<div class="notselected">
+								4
+							</div>
+							<div class="notselected">
+								5
+							</div>
+							<div class="notselected">
+								6
+							</div>	
+						</div>
+						<div id="mancontainer">
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+							<div class="gridrow">
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="leftmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+								<div class="rightmancolumn">
+								</div>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>

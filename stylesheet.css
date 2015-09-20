@@ -58,7 +58,10 @@
 }
 
 #formwrapper {
-	width:50%;
+	width:55%;
+	clear:both;
+	float:left;
+	margin-left:1%;
 }
 
 #IDinput {
@@ -69,18 +72,22 @@
 }
 
 #leftcolumn {
-	width:48%;
+	width:55%;
 	height:100%;
 	float:left;
 	clear:both;
 	display:inline-block;
+	border:solid 1px #6c7a89;
+	padding:4px;
+	margin-top:3px;
 }
 
-#consciousnessinput {
+.fullleftcolumn {
 	display:inline-block;
 	clear:both;
 	width:100%;
 	margin-top:2%;
+	border-bottom:solid 1px #6c7a89;
 }
 
 .notselected {
@@ -110,7 +117,7 @@
 	display:inline-block;
 }
 
-.leftcolumnvital {
+.columnvital {
 	width:100%;
 	height:25%;
 	text-align:left;
@@ -119,4 +126,42 @@
 
 .vitalinput {
 	width: 60px;
+}
+
+.category {
+	width:20%;
+	display:inline-block;
+}
+.bleeding {
+	display:block;
+}
+
+.bleedingchoices {
+	float:right;
+	display:inline-block;
+	width:80px;
+	text-align: center;
+}
+#rightcolumn{
+	display:inline-block;
+	width:40%;
+	height:100%;
+}
+#mancontainer{
+	background-image: url("images/man.png");
+	height:204px;
+	width:245px;
+	background-repeat:no-repeat;
+}
+.leftmancolumn {
+	height:20.4px;
+	width:20px;
+	float:left;
+	display:inline-block;
+}
+.rightmancolumn {
+	height:20.4px;
+	width:20px;
+	float:right;
+	display:inline-block;
 }
