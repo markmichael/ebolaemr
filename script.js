@@ -25,6 +25,12 @@ $(document).ready(function(){
 		$(this).addClass("activatedday");
 	});
 
+	$(document).on('click','.addtime',function(){
+		if($(this).siblings().length<8){
+		$("<div class='time'>"+($(this).siblings().length+1)+"</div>").insertAfter($(this));
+	}
+	});
+
 	});
 var checkeverything=function(){
 
@@ -73,9 +79,5 @@ var checkeverything=function(){
 }
 
 var addday=function(latestday){
-	$(".daycontainer").append("<div class='day'>Day "+(latestday)+"<div class='time' class='addtime'>+</div><div class='time'>1</div></div");
-}
-
-var addtime=function(latesttime){
-	$(this).clone().removeClass("addtime").text(latesttime);
+	$(".daycontainer").append("<div class='day'>Day "+(latestday)+"<div class='time addtime'>+</div><div class='time'>1</div></div");
 }
